@@ -37,7 +37,7 @@ jobs:
         run: echo "::set-output name=date::$(date -u +"%Y-%m-%dT%H%MZ")"
 
       - name: Publish to Registry
-        uses: elgohr/Publish-Docker-Github-Action@2.14
+        uses: elgohr/Publish-Docker-Github-Action@v5
         with:
           name: 'smartcontract/builder-cache'
           dockerfile: 'builder-cache.Dockerfile'
